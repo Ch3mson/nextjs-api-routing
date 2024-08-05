@@ -18,8 +18,8 @@ export default function Home() {
 
   return (
     
-    <div className="flex flex-col p-8 gap-3">
-      <h1>
+    <div className="flex flex-col p-8 gap-3 items-center">
+      <h1 className="text-blue-500">
         Welcome to Jamauls Weather App! Search for a city for details:
       </h1>
       <TextField 
@@ -30,6 +30,10 @@ export default function Home() {
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleSearch}
       />
+      <p>
+        gives WeatherData
+      </p>
+
     </div>
   );
 }
